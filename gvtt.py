@@ -21,30 +21,48 @@ def createGrammarBank(grList) -> list[str]:
 
 def vocabTest(n, vocabBank):
     #For numTerms times, select a random word from the word bank, after user input, print definition.
-    for i in range (0, numTerms):
-        RNG = random.choice(vocabBank)
+    for i in range (0, n):
+        RNG_V = random.choice(vocabBank)
         print("ROUND: " + str(i + 1))
-        print("Current Term: " + RNG[0])
+        print("Current Term: " + RNG_V[0])
         input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
-        print("Definition: " + RNG[1] + "\n\n")
+        print("Definition: " + RNG_V[1] + "\n\n")
+        
+#TODO: Find a better way to incorporate grammar as a study method
+def vocabAndGrammarTest(n, vocabBank, grammBank):
+    for i in range (0, n):
+        RNG_V = random.choice(vocabBank)
+        RNG_G = random.choice(grammBank)
+        print("ROUND: " + str(i + 1))
+        print("Current Term: " + RNG_V[0] + " Vocab: " + RNG_G)
+        input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
+        print("Definition: " + RNG_V[1] + "\n\n")
 
 #Open vocab list and read into array
 vocabInput = open("vocab_list.txt", "r", encoding="utf8")
 viList = vocabInput.readlines()
 vocabInput.close()
 
-""""
+
 grammarInput = open("grammar_list.txt", "r", encoding="utf8")
 grList = grammarInput.readlines()
 grammarInput.close()
-"""
+
 vocabBank = createVocabBank(viList) #Creates vocab word bank
-#grammBank = createGrammarBank(grList) #Creates grammar word bank
+grammBank = createGrammarBank(grList) #Creates grammar word bank
 
-#Take user input to create desired study environment.
-numTerms = input("How many terms would you like?\n") #TODO: Input sanitization. Case handling for non-numerical input.
-numTerms = int(numTerms)
-grammFlag = input("Would you like to add grammar terms as well?\nNOTE: type 1 for yes, 0 for no\n")
-grammFlag = int(grammFlag)
-
-vocabTest(numTerms, vocabBank)
+exit = 1
+while exit == 1:
+    #Take user input to create desired study environment.
+    numTerms = input("How many terms would you like?\n") #TODO: Input sanitization. Case handling for non-numerical input.
+    numTerms = int(numTerms)
+    grammFlag = input("Would you like to add grammar terms as well?\nNOTE: type 1 for yes, 0 for no\n")
+    grammFlag = int(grammFlag)
+    
+    if grammFlag == 0:
+        vocabTest(numTerms, vocabBank)
+    else:
+        vocabAndGrammarTest(numTerms, vocabBank, grammBank)
+    exit = input("Would you like to continue?\nNOTE: 1 for yes, 0 for no\n")
+    exit = int(exit)
+    print()
