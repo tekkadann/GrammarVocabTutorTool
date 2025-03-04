@@ -47,3 +47,43 @@
 卓|たく table/desk
 早朝|そうちょう early morning
 朝夕|あさゆう morning and evening, from dawn till dusk
+嘲笑|ちょうしょう scornful laughter, ridicule, derision
+自嘲|じちょう self-deprecation, self-derision
+只|ただ ordinary
+子守唄|こもりうた lullaby
+児童|じどう children, juvenile
+頑として|がんとして stubbornly, firmly
+句|く section (of a test), passage
+文句|もんく complaint, grumbling
+肌|はだ skin
+肌着|はだぎ underwear
+鳥肌が立つ|とりはだがたつ to get goosebumps
+平凡|へいぼん ordinary
+凡人|ぼんじん ordinary/average person
+目的|もくてき goal, aim
+知的|ちてき intellectual
+先天的|せんてんてき inherent, hereditary, innate
+穴|あな hole, opening
+瞳孔|どうこう pupil (of the eye)
+完了|かんりょう completion, conclusion
+終了|しゅうりょう end, close, termination
+いかに|how , in what way
+欠如|けつじょ lack, absence, shortage
+貫く|つらぬく to go through, to pierce
+呪い|のろい curse
+克服|こくふく conquest (of a difficulty, illness, etc) overcoming
+克明|こくめい detailed, minute, elaborate
+克己|こっき self restraint
+砕ける|くだける to be broken (into pieces), to be smashed
+砕く|くだく to break (into pieces), to smash
+砂漠|さばく desert
+妬む|ねたむ to be jealous of, to envy
+削る|けずる to shave, to whittle, to scrape off
+削減|さくげん cut, reduction
+武器|ぶき weapon
+楽器|がっき musical instrument
+食器|しょっき tableware
+器具|きぐ utensil
+容器|ようき container
+計器|けいき meter, gauge
+炊飯器|すいはんき rice cooker

@@ -37,8 +37,17 @@ def vocabAndGrammarTest(n, vocabBank, grammBank):
         print("Current Term: " + RNG_V[0] + " Vocab: " + RNG_G)
         input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
         print("Definition: " + RNG_V[1] + "\n\n")
-
-
+        
+def numericalInput(text) -> int:
+    inValidate = False
+    while not inValidate: #TODO: Create function that receives input and autoconverts to int/handles sanitization.
+        var = input(text) #TODO: Input sanitization. Case handling for non-numerical input.
+        try:
+            var = int(var)
+            inValidate = True
+        except:
+            print("Input was not numerical, please try again.")
+    return var
 #ENTRY POINT HERE!
 #Open vocab list and read into array
 vocabInput = open("vocab_list.txt", "r", encoding="utf8")
@@ -56,15 +65,13 @@ grammBank = createGrammarBank(grList) #Creates grammar word bank
 exit = 1
 while exit == 1:
     #Take user input to create desired study environment.
-    numTerms = input("How many terms would you like?\n") #TODO: Input sanitization. Case handling for non-numerical input.
-    numTerms = int(numTerms)
-    grammFlag = input("Would you like to add grammar terms as well?\nNOTE: type 1 for yes, 0 for no\n")
-    grammFlag = int(grammFlag)
+    numTerms = numericalInput("How many terms would you like to study?\n")
     
+    grammFlag = numericalInput("Would you like to add grammar terms as well?\nNOTE: type 1 for yes, 0 for no\n")
+    if grammFlag > 1: grammFlag = 1 #Catch case where user input unexpected input
     if grammFlag == 0:
         vocabTest(numTerms, vocabBank)
     else:
         vocabAndGrammarTest(numTerms, vocabBank, grammBank)
-    exit = input("Would you like to continue?\nNOTE: 1 for yes, 0 for no\n")
-    exit = int(exit)
+    exit = numericalInput("Would you like to continue?\nNOTE: 1 for yes, 0 for no\n")
     print()
