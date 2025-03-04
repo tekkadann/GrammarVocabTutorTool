@@ -38,6 +38,8 @@ def vocabAndGrammarTest(n, vocabBank, grammBank):
         input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
         print("Definition: " + RNG_V[1] + "\n\n")
 
+
+#ENTRY POINT HERE!
 #Open vocab list and read into array
 vocabInput = open("vocab_list.txt", "r", encoding="utf8")
 viList = vocabInput.readlines()
