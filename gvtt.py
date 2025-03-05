@@ -9,7 +9,7 @@ IMPORTANT DATA TYPES:
 """
 
 #Split each term into two parts, term and definition, and then add those parts to an array to represent our "dictionary"
-def createVocabBank(viList) -> list[str]: 
+def createVocabBank(viList) -> list[Vocab]: 
     wordBank = [] #Declare array for storing words
     for n in range(len(viList)):
         currLine:str = viList[n]
