@@ -1,12 +1,5 @@
-class Vocab:
-    def __init__(self, term, definition, priority):
-        self.term = term
-        self.definition = definition
-        self.priority = priority
-        self.n = 0
-    #TODO: Define Vocab object comparison. does __eq__ handle-less than and greater-than as well?
-    
-        
+from vocabDef import Vocab
+
 class MaxHeap:
     #TODO: Test Heap and make sure building/maintaining heap works
     #TODO: Define methods for maintaining priority between vocab items. Implementation may not be present here
