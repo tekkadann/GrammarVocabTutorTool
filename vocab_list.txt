@@ -87,3 +87,64 @@
 容器|ようき container
 計器|けいき meter, gauge
 炊飯器|すいはんき rice cooker
+匂い|におい smell, odor
+臭い|くさい stinking, smelly
+匂う|におう to be fragrant, to smell (good)
+臭う|におう to stink, to smell (bad)
+生臭い|なまくさい smelling of fish, blood,
+水臭い|もずくさい watery
+嗅ぐ|かぐ to sniff, to smell
+奇妙（な）|きみょう strange, odd, peculiar
+妙|みょう strange, weird
+反省|はんせい reflection
+省略|しょうりゃく abbreviation
+省く|はぶく to omit, to leave out
+帰省|きせい homecoming, returning home
+省エネルギー|しょうエネルギー energy conservation; economical use of energy
+厚い|あつい thick, deep, heavy
+厚着|あつぎ wearing thick/warm clothes
+奇数|きすう odd number (non divisible by 2)
+好奇心|こうきしん curiosity
+反乱|はんらん insurrection; mutiny; rebellion
+乱用|らんよう abuse, misuse
+乱れる|みだれる to be disordered, to be disarrayed
+混乱|こんらん disorder, chaos, mayhem
+内乱|ないらん civil war
+乱売|らんばい clearance sale; FIRE SALE
+乱調|らんちょう confusion
+正直|しょうじき honest, frank
+真っ直ぐ|まっすぐ straight (ahead), direct
+直線|ちょくせん straight line
+直感|ちょっかん intuition, instinct, hunch
+直ちに|ただちに at once, immediately, right away
+直に|じかに directly, in person, first hand
+見直す|みなおす to look at again; to re-examine
+直前|ちょくぜん just before/prior to
+仲直り|なかなおり reconciliation; making up (with); making peace
+手直し|てなおし adjustment, tweaking, improvement
+道具|どうぐ tool, impalement
+家具|かぐ furniture
+具合|ぐあい condition, state
+具体的な|ぐたいてき concrete, specific
+真空|しんくう vacuum; absolute void
+真ん中|まんなか middle, center
+真珠|しんじゅ pearl
+真理|しんり truth
+真っ赤|まっか bright red, flushed (face)
+真っ赤（な）|まっか downright (e.g. lie); complete; utter
+まことに|indeed, really
+真っ暗|まっくら pitch-dark/pitch-black
+真実|しんじつ truth, reality; absolute truth
+真相|しんそう real situation; truth
+有能|ゆうのう able, capable
+有料|ゆうりょう fee-charging, paid, not free
+有無|うむ existence or nonexistence; presence or absence; yes or no
+固有|こゆう characteristic; native
+賄う|まかなう to supply (goods, money, etc.); to cover ((costs)
+項目|headword (in a dictionary, encyclopedia, etc.); entry (in an
+神の思し召し|かみのおぼしめし God's will; God's plan
+昭和|しょうわ Showa era
+法則|ほうそく law, rule
+原則|げんそく principle; general rule
+副詞|ふくし adverb
+ふくさよう|ふくさよう side effect
