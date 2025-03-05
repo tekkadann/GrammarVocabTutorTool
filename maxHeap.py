@@ -1,10 +1,9 @@
 from vocabDef import Vocab
 
 class MaxHeap:
-    #TODO: Test Heap and make sure building/maintaining heap works
     #TODO: Define methods for maintaining priority between vocab items. Implementation may not be present here
     def __init__(self):
-        self.heap = []
+        self.heap : list[Vocab] = [] #NOTE: Heap will ONLY work with Vocab objects
         
     def add(self, item):
         self.heap.insert(0, item)
@@ -36,4 +35,4 @@ class MaxHeap:
             self.heapify(i,0)
             
     def print(self):
-        print(f"Top Element: {self.heap[0]}")
+        print("Top Element: " + self.heap[0].strInfo())

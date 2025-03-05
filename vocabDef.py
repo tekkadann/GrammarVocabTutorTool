@@ -22,7 +22,5 @@ class Vocab:
         return NotImplemented
     
     def strInfo(self)->str:
-        info = self.term + "|" + self.definition + "|" + self.priority + "\n"
+        info = self.term + "|" + self.definition + "|" + str(self.priority)
         return info
-        
-    #TODO: Define Vocab object comparison. does __eq__ handle-less than and greater-than as well?a
