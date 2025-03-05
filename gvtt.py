@@ -1,42 +1,51 @@
+from vocabDef import Vocab
 import random
+
+"""
+IMPORTANT DATA TYPES:
+    term_and_def: List[term, definition]
+    vocabBank: List[term_and_def]
+    grammarBank: List[str] NOTE: this str is a grammar term    
+"""
 
 #Split each term into two parts, term and definition, and then add those parts to an array to represent our "dictionary"
 def createVocabBank(viList) -> list[str]: 
     wordBank = [] #Declare array for storing words
     for n in range(len(viList)):
-        currLine = viList[n]
+        currLine:str = viList[n]
         term_and_def = currLine.split("|") #Split string at definied split point for each term. split() returns a list at split point
         term_and_def[1] = term_and_def[1].rstrip("\n") #Remove newline from the definition for easy formatting
-        wordBank.append(term_and_def)
+        currTerm = Vocab(term_and_def[0], term_and_def[1], 100)
+        wordBank.append(currTerm)
     return wordBank
 
 #Do the same as createVocabBank but for grammr, which only has the term. May add definition/explanation in the future
 def createGrammarBank(grList) -> list[str]:
-    wordBank = []
+    wordBank = [Vocab]
     for n in range(len(grList)):
         currLine = grList[n]
         term = currLine.rstrip("\n")
         wordBank.append(term)
     return wordBank
 
-def vocabTest(n, vocabBank):
+def vocabTest(n, vocabBank:list[Vocab]):
     #For numTerms times, select a random word from the word bank, after user input, print definition.
     for i in range (0, n):
         RNG_V = random.choice(vocabBank)
         print("ROUND: " + str(i + 1))
-        print("Current Term: " + RNG_V[0])
+        print("Current Term: " + RNG_V.term)
         input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
-        print("Definition: " + RNG_V[1] + "\n\n")
+        print("Definition: " + RNG_V.definition + "\n\n")
         
 #TODO: Find a better way to incorporate grammar as a study method
-def vocabAndGrammarTest(n, vocabBank, grammBank):
+def vocabAndGrammarTest(n, vocabBank:list[Vocab], grammBank):
     for i in range (0, n):
         RNG_V = random.choice(vocabBank)
         RNG_G = random.choice(grammBank)
         print("ROUND: " + str(i + 1))
-        print("Current Term: " + RNG_V[0] + " Vocab: " + RNG_G)
+        print("Current Term: " + RNG_V.term + " Vocab: " + RNG_G)
         input("When ready to continue, press ENTER") #Jank use of input() to wait for userinput to continue execution. Find potential better way
-        print("Definition: " + RNG_V[1] + "\n\n")
+        print("Definition: " + RNG_V.definition + "\n\n")
         
 def numericalInput(text) -> int:
     inValidate = False
@@ -60,6 +69,10 @@ grList = grammarInput.readlines()
 grammarInput.close()
 
 vocabBank = createVocabBank(viList) #Creates vocab word bank
+vocabHeapFile = open("vocab_heap.txt", "w+", encoding="utf8")
+for i in range(len(vocabBank)):
+    
+
 grammBank = createGrammarBank(grList) #Creates grammar word bank
 
 exit = 1
