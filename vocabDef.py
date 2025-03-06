@@ -1,9 +1,15 @@
 class Vocab:
-    def __init__(self, term, definition, priority):
+    def __init__(self, term:str, definition:str, priority:int):
         self.term = term
         self.definition = definition
         self.priority = priority
-        self.n = 0
+        #self.n = 0
+        
+    def reassemble(self, line:list[str,str,int]):
+        #params = line.split("|")
+        self.term = line[0]
+        self.definition = line[1]
+        self.priority = line[2]
         
     def __lt__(self, other):
         if isinstance(other, Vocab):
