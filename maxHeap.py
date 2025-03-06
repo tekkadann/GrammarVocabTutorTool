@@ -34,5 +34,13 @@ class MaxHeap:
             self.heap[0], self.heap[i] = self.heap[i], self.heap[0]
             self.heapify(i,0)
             
+    def getTop(self)->Vocab:
+        return self.heap[0]
+    
+    def popTop(self):
+        self.heap.pop(0)
+        n = len(self.heap)
+        self.heapify(n, 0)
+            
     def print(self):
         print("Top Element: " + self.heap[0].strInfo())

@@ -3,7 +3,7 @@ class Vocab:
         self.term = term
         self.definition = definition
         self.priority = priority
-        #self.n = 0
+        self.age = 0
         
     def reassemble(self, line:list[str,str,int]):
         #params = line.split("|")
